@@ -14,7 +14,7 @@ jobs:
 
       - name: python script
         run: |
-            cd test
-            python script.py
-            python scripts.py
+          cd test
+          python script.py
+          python scripts.py
       
