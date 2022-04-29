@@ -11,8 +11,10 @@ jobs:
       - name: python version
         run: python --version
 
+
       - name: python script
         run: |
+            cd test
             python script.py
             python scripts.py
       
