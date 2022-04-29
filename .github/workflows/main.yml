@@ -8,5 +8,11 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: '3.7'
-      - run: python --version
+      - name: python version
+        run: python --version
+
+      - name: python script
+        run: |
+            python script.py
+            python scripts.py
       
