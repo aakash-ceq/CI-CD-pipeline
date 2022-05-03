@@ -3,8 +3,8 @@ on:
   push:
     branches:
     - main
-    paths-ignore:
-    - test/script.py
+  paths-ignore:
+    - 'script.py'
 
 env:
   file: python.py
