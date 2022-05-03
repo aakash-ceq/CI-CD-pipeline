@@ -2,7 +2,7 @@ name: learn-github-actions
 on:
   push:
     branches:
-    - main
+    - master
     path-ignore:
     - 'script.py'
 
