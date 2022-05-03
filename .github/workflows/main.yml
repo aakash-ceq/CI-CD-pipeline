@@ -3,8 +3,9 @@ on:
   push:
     branches:
     - main
-  paths-ignore:
+    paths-ignore:
     - 'script.py'
+    
 
 env:
   file: python.py
