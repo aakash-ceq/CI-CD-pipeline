@@ -2,9 +2,8 @@ name: learn-github-actions
 on:
   push:
     branches:
-    - main
+    - master
     paths-ignore:
-      cd test
     - 'script.py'
     
 
