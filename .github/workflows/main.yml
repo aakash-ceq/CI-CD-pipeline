@@ -26,7 +26,7 @@ jobs:
 
       - name: python script
         run: |
-          cd test
+        
           python $file1
           python $file
       
