@@ -4,7 +4,7 @@ on:
     branches:
     - main
     paths-ignore:
-    - 'script.py'
+    - script.py
 
 env:
   file: scripts.py
