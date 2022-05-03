@@ -30,4 +30,6 @@ jobs:
         run: |
           python $file1
           python $file
-      
+          
+      - name: check the cron
+        run: echo hello,suraj
