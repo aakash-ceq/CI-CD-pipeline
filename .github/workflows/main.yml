@@ -8,6 +8,7 @@ on:
 
 env:
   file: scripts.py
+  file1: script.py
 
 
 jobs:
@@ -25,6 +26,6 @@ jobs:
       - name: python script
         run: |
           cd test
-          python script.py
+          python $file1
           python $file
       
