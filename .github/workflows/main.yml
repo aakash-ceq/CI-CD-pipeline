@@ -7,7 +7,7 @@ on:
     - script.py
 
 env:
-  file: scripts.py
+  file: python.py
   file1: script.py
 
 
