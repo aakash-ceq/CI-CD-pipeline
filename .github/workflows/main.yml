@@ -35,6 +35,7 @@ jobs:
       - name: set the cron schedule
         uses: gr2m/set-cron-schedule-action@v2
         with:
+          token: ${{secrets.TOKEN}}
           cron: '5 * * * *'  
        
       - name: check cron time
