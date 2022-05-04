@@ -32,12 +32,9 @@ jobs:
           python $file
       
       
-      - run: echo hello,suraj
-      - uses: gr2m/set-cron-schedule-action@v2
-        with:
-          token: ${{secrets.TOKEN}}
-          cron: 5 * * * *
-
+      - name: schedule crone
+        if: github.event.schedule == '5 * * * *'
+        run: echo hello,suraj
     
           
           
