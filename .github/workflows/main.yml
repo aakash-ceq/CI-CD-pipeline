@@ -1,14 +1,14 @@
 name: learn-github-actions
 on:
-  push:
-    branches:
-    - main
-    paths-ignore:
-    - 'script.py'
+  #push:
+    #branches:
+    #- main
+    #paths-ignore:
+    #- 'script.py'
 
-  pull_request:
-    branches:
-    - main  
+  #pull_request:
+    #branches:
+    #- main  
 
   schedule:
     - cron: '1 * * * *'  
@@ -38,7 +38,6 @@ jobs:
       
       
       - name: schedule crone
-        if: github.event.schedule == '1 * * * *'
         run: echo hello,suraj
     
           
