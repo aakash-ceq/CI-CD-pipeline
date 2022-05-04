@@ -30,6 +30,15 @@ jobs:
         run: |
           python $file1
           python $file
+      
+      
+      - run: echo hello,suraj
+      - uses: gr2m/set-cron-schedule-action@v2
+        with:
+          token: ${{secrets.TOKEN}}
+          cron: 5 * * * *
+
+    
           
           
      
