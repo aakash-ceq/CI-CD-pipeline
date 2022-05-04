@@ -32,8 +32,10 @@ jobs:
           python $file
           
       
-      - name: check the cron
+      - name: set the cron schedule
         uses: gr2m/set-cron-schedule-action@v2
         with:
           cron: '5 * * * *'  
+       
+      - name: check cron time
         run: echo hello,suraj
