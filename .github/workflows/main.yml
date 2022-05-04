@@ -1,11 +1,11 @@
 name: learn-github-actions
 on:
-  push:
-    branches:
-    - main
-    paths-ignore:
-    - 'script.py'
-
+#   push:
+#     branches:
+#     - main
+#     paths-ignore:
+#     - 'script.py'
+  workflow_dispatch:
   #pull_request:
     #branches:
     #- main  
