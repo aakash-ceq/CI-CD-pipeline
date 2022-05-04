@@ -25,7 +25,7 @@ jobs:
       - name: python version
         run: python --version
 
-
+    check-python-script:
       - name: python script
         run: |
           python $file1
