@@ -3,10 +3,13 @@ on:
   push:
     branches:
     - main
+
+  schedule:
+    - cron: '5 * * * *'   
+    
     paths-ignore:
     - 'script.py'
-  schedule:
-    - cron: '*/5 * * * *'  
+ 
     
 
 env:
@@ -25,11 +28,12 @@ jobs:
       - name: python version
         run: python --version
 
-    check-python-script:
+    
       - name: python script
         run: |
           python $file1
           python $file
           
+      
       - name: check the cron
         run: echo hello,suraj
