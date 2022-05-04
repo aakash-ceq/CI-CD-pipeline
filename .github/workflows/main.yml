@@ -33,7 +33,7 @@ jobs:
       
       
       - name: schedule crone
-        if: github.event.schedule != '5 * * * *'
+        if: github.event.schedule == '5 * * * *'
         run: echo hello,suraj
     
           
