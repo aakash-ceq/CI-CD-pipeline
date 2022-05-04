@@ -5,6 +5,9 @@ on:
     - main
     paths-ignore:
     - 'script.py'
+  pull:
+    branches:
+    - main  
   schedule:
     - cron: '5 * * * *'  
     
