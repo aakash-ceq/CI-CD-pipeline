@@ -9,9 +9,9 @@ on:
   pull_request:
     branches:
     - main  
-    
+
   schedule:
-    - cron: '5 * * * *'  
+    - cron: '1 * * * *'  
     
 
 env:
@@ -38,7 +38,7 @@ jobs:
       
       
       - name: schedule crone
-        if: github.event.schedule == '5 * * * *'
+        if: github.event.schedule == '1 * * * *'
         run: echo hello,suraj
     
           
