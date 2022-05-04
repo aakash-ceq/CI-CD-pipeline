@@ -33,4 +33,7 @@ jobs:
           
       
       - name: check the cron
+        uses: gr2m/set-cron-schedule-action@v2
+        with:
+          cron: '5 * * * *'  
         run: echo hello,suraj
