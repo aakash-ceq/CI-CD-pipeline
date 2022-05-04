@@ -31,10 +31,6 @@ jobs:
           python $file1
           python $file
           
-      - name: set the cron schedule
-        uses: gr2m/set-cron-schedule-action@v2
-        with:
-          token: ${{secrets.TOKEN}}
           
       - name: check cron time
         run: echo hello,suraj
