@@ -10,8 +10,8 @@ on:
     #branches:
     #- main  
 
-  schedule:
-    - cron: '*/1 * * * *'  
+  #schedule:
+    #- cron: '*/1 * * * *'  
 
 
     
